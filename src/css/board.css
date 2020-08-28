@@ -1,0 +1,27 @@
+#board {
+    /* border: white 1px dotted; */
+    width: 70%;
+    float: right;
+    margin-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .word{
+    display: flex;
+    margin-right: 50px;
+  }
+  
+  .letter {
+    width: 7.5%;
+    height: 75px;
+    width: 75px;
+    border-bottom: white solid 2px;
+    margin: 0 15px;
+  }
+  
+  .letter > span {
+    display: block;
+    font-size: 50px;
+  }
+  

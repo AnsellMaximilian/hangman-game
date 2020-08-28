@@ -8,10 +8,20 @@ class GuessBoard extends React.Component {
     render(){
         const letterCards = this.state.letters.split("").map((letter) => {
             return (
+                this.props.guessedLetters.includes(letter) ? 
+                <div 
+                    key={letter} 
+                    className="letter-card guessed-card"
+                >
+                    {letter}
+                </div>
+
+                :
+
                 <div 
                     onClick={() => this.props.handleClick(letter)} 
                     key={letter} 
-                    className={this.props.guessedLetters.includes(letter) ? "letter-card guessed-card" : "letter-card"}
+                    className="letter-card"
                 >
                     {letter}
                 </div>

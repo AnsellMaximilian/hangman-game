@@ -2,6 +2,7 @@
     position: relative;
     height: 250px;
     width: 250px;
+    /* width: 20%; */
     cursor: pointer;
     --color: repeating-linear-gradient(white, gray, white);
     float: left;
@@ -49,68 +50,42 @@
     top: 0;
 }
 
-#hangman-arms {
-    position: relative;
-    margin: 0 auto;
-    top: -35%;
-    width: 100%;
+#hangman-leftarm {
+    background-image: url('../images/chalk-texture.png');
+    width: 40%;
     height: 5%;
-}
-
-#hangman-arms::before {
-    content: "";
-    width: 40%;
-    height: 100%;
-    background-image: url('../images/chalk-texture.png');
-    left: 16%;
-    top: 140%;
     position: absolute;
-    transform: rotate(-45deg);
+    top: 35%;
+    left: 12.5%;
 }
 
-#hangman-arms::after {
-    content: "";
-    width: 40%;
-    height: 100%;
+#hangman-rightarm {
     background-image: url('../images/chalk-texture.png');
-    right: 16%;
-    top: 140%;
-    position: absolute;
-    transform: rotate(45deg);
-}
-
-#hangman-legs {
-    position: relative;
-    width: 100%;
+    width: 40%;
     height: 5%;
-    top: -5%;
-}
-
-#hangman-legs::before {
-    content: "";
-    width: 40%;
-    height: 100%;
-    background-image: url('../images/chalk-texture.png');
-    left: 16%;
-    top: 140%;
     position: absolute;
-    transform: rotate(-45deg);
+    top: 35%;
+    right: 12.5%;
 }
 
-#hangman-legs::after {
-    content: "";
-    width: 40%;
-    height: 100%;
+#hangman-leftleg {
     background-image: url('../images/chalk-texture.png');
-    right: 16%;
-    top: 140%;
+    width: 50%;
+    height: 5%;
     position: absolute;
-    transform: rotate(45deg);
+    bottom: 15%;
+    left: 7.5%;
+    transform: rotate(-45deg)
 }
 
-#hangman-container:hover #hangman-arms::after {
-    transform: rotate(-45deg);
-    top: -200%;
+#hangman-rightleg {
+    background-image: url('../images/chalk-texture.png');
+    width: 50%;
+    height: 5%;
+    position: absolute;
+    bottom: 15%;
+    right: 7.5%;
+    transform: rotate(45deg)
 }
 
 

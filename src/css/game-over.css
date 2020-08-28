@@ -1,0 +1,73 @@
+@keyframes sway {
+    0%{transform: translate(-50%, -150%);}
+    /* 25%{transform: translate(-51%, -50%);}
+    50%{transform: translate(-50%, -50%);}
+    75%{transform: translate(-51%, -50%);} */
+    100%{transform: translate(-50%, -50%);}
+}
+
+
+#game-over {
+    background-color: rgb(17, 19, 26);
+    width: 75vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../images/chalkboard.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    border: 20px rgb(54, 44, 23) solid;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.466) inset, -10px -10px 10px rgba(0, 0, 0, 0.466) inset;
+    animation-duration: 1s;
+    animation-name: sway;
+  }
+  
+  #game-over::before {
+    content: "";
+    width: 5px;
+    height: 110%;
+    background-color: white;
+    position: absolute;
+    top: -115%;
+    left: 10%;
+    background-image: repeating-linear-gradient(45deg,white,gray 5%,black 6%);
+  }
+  
+  #game-over::after {
+    content: "";
+    width: 5px;
+    height: 110%;
+    background-color: white;
+    position: absolute;
+    top: -115%;
+    right: 10%;
+    background-image: repeating-linear-gradient(45deg,white,gray 5%,black 6%);
+  }
+
+@keyframes bob {
+
+  0%{transform: translate(0, 0px);}
+  50%{transform: translate(0, 5px);}
+  100%{transform: translate(0, 0px);}
+}
+
+  #try-again-button {
+      cursor: pointer;
+      transition-property: all;
+      transition-duration: 0.25s;
+      width: 150px;
+      margin: 20px auto;
+      animation: bob 2s infinite;
+      animation-delay: 0s;
+  }
+
+  #try-again-button:hover {
+      transform: scale(1.2);
+      animation: none;
+  }
+
+#guessed-word {
+  letter-spacing: 5px;
+  font-style: italic;
+}
