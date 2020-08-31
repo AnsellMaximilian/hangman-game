@@ -1,5 +1,7 @@
 import React from 'react';
 
+import '../css/guess-board.css';
+
 class GuessBoard extends React.Component {
     state = {
         letters: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",

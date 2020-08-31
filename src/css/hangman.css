@@ -1,12 +1,18 @@
+@keyframes draw {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+
 #hangman-container {
+    margin: 0 auto;
     position: relative;
     height: 250px;
     width: 250px;
     /* width: 20%; */
     cursor: pointer;
     --color: repeating-linear-gradient(white, gray, white);
-    float: left;
-    margin-left: 50px;
+    
 }
 
 #hangman-stake {
@@ -36,6 +42,10 @@
     width: 40%;
     height: 30%;
     background-image: url('../images/chalk-texture.png');
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
     border-radius: 50%;
     margin: 0 auto;
 }
@@ -45,6 +55,10 @@
     height: 40%;
     /* position: absolute; */
     background-image: url('../images/chalk-texture.png');
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
     margin: 0 auto;
     position: relative;
     top: 0;
@@ -52,6 +66,10 @@
 
 #hangman-leftarm {
     background-image: url('../images/chalk-texture.png');
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
     width: 40%;
     height: 5%;
     position: absolute;
@@ -61,6 +79,10 @@
 
 #hangman-rightarm {
     background-image: url('../images/chalk-texture.png');
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
     width: 40%;
     height: 5%;
     position: absolute;
@@ -70,6 +92,10 @@
 
 #hangman-leftleg {
     background-image: url('../images/chalk-texture.png');
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
     width: 50%;
     height: 5%;
     position: absolute;
@@ -80,12 +106,30 @@
 
 #hangman-rightleg {
     background-image: url('../images/chalk-texture.png');
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
     width: 50%;
     height: 5%;
     position: absolute;
     bottom: 15%;
     right: 7.5%;
     transform: rotate(45deg)
+}
+
+@media only screen and (min-width: 1260px){
+    #hangman-container {
+        float: left;
+        margin: 0 0 0 50px;
+    }
+}
+
+@media only screen and (max-width: 1260px){
+    #hangman-container {
+        width: 150px;
+        height: 150px;
+    }
 }
 
 

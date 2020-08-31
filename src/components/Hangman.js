@@ -11,22 +11,22 @@ class Hangman extends React.Component {
                 <div id="hangman-stake">
                 </div>
                 <div id="hangman">
-                    <div id="hangman-head" style={{display: guesses > 0 ? "block" : "none"}}>
+                    <div id="hangman-head" style={{animationName: guesses > 0 ? "draw" : "none"}}>
 
                     </div>
-                    <div id="hangman-body" style={{display: guesses > 1 ? "block" : "none"}}>
+                    <div id="hangman-body" style={{animationName: guesses > 1 ? "draw" : "none"}}>
                         
                     </div>
-                    <div id="hangman-leftarm" style={{display: guesses > 2 ? "block" : "none"}}>
+                    <div id="hangman-leftarm" style={{animationName: guesses > 2 ? "draw" : "none"}}>
 
                     </div>
-                    <div id="hangman-rightarm" style={{display: guesses > 3 ? "block" : "none"}}>
+                    <div id="hangman-rightarm" style={{animationName: guesses > 3 ? "draw" : "none"}}>
 
                     </div>
-                    <div id="hangman-leftleg" style={{display: guesses > 4 ? "block" : "none"}}>
+                    <div id="hangman-leftleg" style={{animationName: guesses > 4 ? "draw" : "none"}}>
 
                     </div>
-                    <div id="hangman-rightleg" style={{display: guesses > 5 ? "block" : "none"}}>
+                    <div id="hangman-rightleg" style={{animationName: guesses > 5 ? "draw" : "none"}}>
 
                     </div>
                 </div>
