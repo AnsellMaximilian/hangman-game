@@ -59,6 +59,13 @@
         margin: 5px 5px;
     }
 
+    .letter-card::before {
+      width: 5px;
+      height: 5px;
+      right: 2.5px;
+      top: 2.5px;
+    }
+
     .guessed-card::after {
         font-size: 45px;
         line-height: 55px;

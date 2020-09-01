@@ -5,6 +5,12 @@
     flex-wrap: wrap;
     margin: 0 auto;
   }
+
+#loading {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;;
+}
   
   .word{
     display: flex;
@@ -28,10 +34,18 @@
 @media only screen and (min-width: 1260px) {
   #board {
     float: right;
-    margin-right: 50px;
+    margin: 50px 50px 0 0;
+    /* margin-right: 50px; */
     width: 70%;
-
   }
+
+  #loading {
+    float: right;
+    margin: 50px 50px 0 0;
+    /* margin-right: 50px; */
+    width: 70%;
+}
+  
 
   .word{
     margin: 0 50px 0 0;
@@ -40,6 +54,7 @@
 }
 
 @media only screen and (max-width: 1260px) {
+
   .letter {
     width: 7vw !important;
     height: 7vw !important;

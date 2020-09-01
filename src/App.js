@@ -12,7 +12,7 @@ class App extends React.Component {
   constructor(props){
     super(props);
       this.state = {
-        words: ["YOU", "ARE", "A", "FAGGOT"],
+        words: [],
         guessedLetters: [],
         guesses: 0,
         gameOver: false,
@@ -79,7 +79,7 @@ class App extends React.Component {
       <div className="App">
         <Header/>
         <Hangman guesses={this.state.guesses}/>
-        <Board words={this.state.words} guessedLetters={this.state.guessedLetters}/>
+        {this.state.words.length === 0 ? <h1 id="loading">LOADING...</h1> : <Board words={this.state.words} guessedLetters={this.state.guessedLetters}/> }
         <GuessBoard handleClick={this.guessLetter} guessedLetters={this.state.guessedLetters}/>
         {this.state.gameOver ? <GameOver handleClick={this.resetGame} win={this.state.win} words={this.state.words}/> : null}
       </div>
