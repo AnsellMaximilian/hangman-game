@@ -1,4 +1,4 @@
-Hangman game created using React.js.
+# Hangman game created using React.js.
 
 See it live [here](https://ansellmaximilian.github.io/hangman-game)
 
