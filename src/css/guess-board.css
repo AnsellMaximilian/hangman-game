@@ -75,3 +75,24 @@
         margin-top: 15px;
     }
   }
+
+  @media only screen and (max-width: 480px) {
+    .letter-card {
+        width: 35px;
+        height: 35px;
+        font-size: 25px;
+        margin: 5px;
+    }
+
+    .letter-card::before {
+      width: 5px;
+      height: 5px;
+      right: 2.5px;
+      top: 2.5px;
+    }
+
+    .guessed-card::after {
+        font-size: 25px;
+        line-height: 35px;
+      }
+  }
